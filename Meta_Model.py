@@ -14,7 +14,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 log=[]
 
 def get_data():
-    return av.get_split_data()
+    return ir.get_split_data()
 
 def compareTechniques():
     train_X, train_y, test_X, test_y = get_data()

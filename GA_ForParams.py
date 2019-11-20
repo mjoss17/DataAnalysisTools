@@ -66,14 +66,14 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 log = []
 
 # modify these based on dataset 
-num_classes = 12
-num_features = 10
-n_pop = 49
-n_iter = 500
+num_classes = 3
+num_features = 4
+n_pop = 36
+n_iter = 20
 
 #get formatted data
 def get_data():
-    return av.get_split_data()
+    return ir.get_split_data()
 
 nn_params = {
     "epochs": [x for x in range(50, 100)],
